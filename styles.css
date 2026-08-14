@@ -10,3 +10,53 @@ html, body {
     height: 600px;
     opacity: 0.85;
 }
+
+.topo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#barra-navegacao nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+}
+
+#barra-navegacao a{
+    color: whitesmoke;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: large;
+    text-decoration: none;
+}
+
+#barra-navegacao a:hover{
+    color: rgb(141, 34, 241);
+}
+
+#titulo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#titulo-nome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+}
+
+#foto_nome{
+    display: flex;
+    gap: 20px;
+    
+}
