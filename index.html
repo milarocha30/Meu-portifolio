@@ -4,38 +4,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+
     <title> Portifólio - Camila Rocha</title>
 </head>
 
 <body>
+    
     <img id="fundo" src="\img\fundo-portifolio.png" alt="fundo de tela">
 
     <header class="topo">
         <nav id="barra-navegacao">
-            <nav class="">
-                <a href="" id="btn-formacao">Formação</a>
-                <a href="" id="btn-hobbies">Projetos Acadêmicos</a>
-                <a href="" id="btn-hobbies">Projetos Pessoais</a>
-                <a href="" id="btn-hobbies">Hobbies & Interesses</a>
-            </nav>
+            
+                <a href="#sobre-mim" id="btn-sobre">Sobre</a>
+                <a href="#formacao" id="btn-formacao">Formação & Experiências</a>
+                <a href="#projetos" id="btn-projetos">Projetos</a>
+                <a href="#hobbies" id="btn-hobbies">Hobbies & Interesses</a>
+            
         </nav>
 
         <div class="titulo">
 
             <div id="titulo-nome">
                 <div id="foto_nome">
-                    <img id="minha-foto" src="" alt="Camila">
-                    <h1 class="nome">Camila Rocha</h1>
+                    <img id="minha-foto" src="\img\Foto_formalCortada3X4.JPG" alt="Camila">
+                    <div class="nome">
+                        <h1 id="camila">Camila Rocha</h1>
+                        <h3 id="camila-descricao">Estudante de Engenharia de Computação</h3>
+                        <div class="links">
+                            <button class="redes-sociais">
+                                <a id="linkedin" href="https://www.linkedin.com/in/camilausrocha/">LinkedIn</a>
+                            </button>
+                            <button  class="redes-sociais">
+                                <a id="curriculo-lattes" href="http://lattes.cnpq.br/1262790311449494">Lattes</a>
+                            </button>
+                        </div>
+                        
+                    </div>
                 </div>
-
-                <h2 class="nome">Estudante de Engenharia de Computação</h2>
             </div>
 
         </div>
     </header>
 
+    <section>
+        <!--SOBRE MIM-->
+        <div class="sobre-container" id="sobre-mim">
+            <h2 class="secao-titulo">Sobre mim</h2>
+            <p class="texto">Sou estudante de Engenharia da Computação, apaixonada por tecnologia e por transformar ideias em soluções. 
+                Tenho interesse em desenvolvimento de software, Inteligência Artificial, dados e tecnologias imersivas.</p>
+            <p class="texto">Ao longo da minha formação, venho buscando unir conhecimento técnico, criatividade e pesquisa por meio de 
+                projetos acadêmicos e experiências práticas. 
+                Estou sempre em busca de novos desafios e oportunidades para aprender, evoluir e construir tecnologias que façam a diferença.</p>
+            <img id="foto-cimatec" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUS1OpNFVLbGpNes0fF6_YSXW_mGLy3oaj95BMQ_Tnlg&s=10" alt="cimatec">
+        </div>      
+          <!--FORMAÇÃO E EXPERIÊNCIAS-->
+        <div class="sobre-container" id="formacao">
+            <h2 class="secao-titulo">Formação & Experiências</h2>
+            <p class="texto">
+                Estudante de <strong>Engenharia de Computação na Universidade SENAI CIMATEC</strong>, atualmente cursando o 6º semestre.
+            </p>
+            <!--SUBTOPICOS-->
+            <h3 class="subtopico">CIMATEC Jr.</h3>
+            <p class="sub-texto">Atuação na empresa jr da Universidade CIMATEC, 
+                com experiência em desenvolvimento profissional, organização e trabalho em equipe.</p>
 
+            <h3 class="subtopico">Clube de Programação</h3>
+            <p class="sub-texto">Atuação como Diretora da área de marketing e comunicação,
+                contribuindo para a criação de conteúdos, divulgação das atividades do clube e organização do setor.</p>
+
+            <!--CLUBE DE PROGRAMAÇÃO - CARROSSEL DE FOTOS-->
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="img/primeira-foto-clube.jpg" class="imagem-carrossel" alt="diretoria do clube">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="img/diretoriaClube.jpeg" class="imagem-carrossel" alt="diretoria do clube">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="img/marketing-clube.JPG" class="imagem-carrossel" alt="marketing do clube">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+
+            <h3 class="subtopico">HIIVE Lab / INCITE Indústria 4.0</h3>
+            <p class="sub-texto">Bolsista de Iniciação Científica no Laboratório de Realidade Virtual HIIVE Lab do SENAI CIMATEC com participação 
+                em projetos de pesquisa e divulgação científica envolvendo Realidade Virtual e Indústria 4.0 
+                e estudos de presença em ambientes imersivos.</p>
+
+            <h3 class="subtopico">Eventos e competições</h3>
+            <p class="sub-texto">Participação em eventos e iniciativas de tecnologia, incluindo SUCESU-BA 2025, SBGAMES, SVR e SIBGRAPI 2025 como voluntária, 
+                além da Olimpíada de Computação CIMATEC nos anos 2024 e 2025 e da Olimpíada Brasileira de Informática (OBI) em 2024.</p>
+            
+        </div>
+          <!--PROJETOS DESENVOLVIDOS-->
+        <div class="sobre-container" id="projetos">
+            <h2 class="secao-titulo">Projetos Desenvolvidos</h2>
+
+            <!--SUBTOPICOS-->
+
+            <h3 class="subtopico">Pokémon Battle Game</h3>
+            <p class="sub-texto"> Jogo desenvolvido em C,
+                aplicando conceitos de algoritmos, estruturas de dados e lógica de programação.</p>
+
+            <h3 class="subtopico">Banco de Dados — INCITE Indústria 4.0</h3>
+            <p class="sub-texto"> Projeto de modelagem e implementação de banco de dados utilizando Oracle, SQL e PL/SQL, 
+                incluindo triggers, funções e regras de negócio.
+                Desenvolvimento de um banco de dados para centralizar e organizar informações da Rede INCITE Indústria 4.0, 
+                abrangendo gestão de colaboradores, pesquisadores, projetos, recursos financeiros, 
+                estoque e processos de aquisição, incluindo o controle de despesas e a documentação associada às compras.
+            </p>
+
+            <h3 class="subtopico"> BioHome App</h3>
+            <p class="sub-texto"> Desenvolvimento de um aplicativo que oferece
+                calendários personalizados de coleta seletiva conforme a localização do usuário, 
+                facilitando a organização e o descarte correto de resíduos em ambientes residenciais. 
+                O projeto busca utilizar a tecnologia para incentivar a reciclagem, promover hábitos sustentáveis 
+                e reduzir os impactos ambientais causados pelo descarte inadequado.</p>
+
+            <h3 class="subtopico">Landing Page — Clube do Livro</h3>
+            <p class="sub-texto"> Desenvolvimento de uma landing page para um clube do livro, com foco em experiência do usuário, 
+                design responsivo e comunicação visual, incentivando a leitura e a participação em comunidades literárias.</p>
+        </div>
+
+        <!--HOBBIES E INTERESSES-->
+
+        <div class="sobre-container" id="hobbies">
+            <h2 class="secao-titulo">Hobbies & Interesses</h2>
+            <p class="texto">Fora da programação e da universidade, gosto de atividades
+                que envolvam criatividade, esporte, tecnologia e aprendizado.</p>
+            
+            <ul>
+                <li id="item1" class="texto"><strong>Programação</strong> — Gosto de aprender novas linguagens, 
+                    frameworks e tecnologias desenvolvendo projetos na prática.</li>
+                <li id="item1" class="texto"><strong>Inteligência Artificial</strong> — Tenho interesse em IA generativa, 
+                    LLMs, agentes inteligentes e novas aplicações da tecnologia.</li>
+                <li id="item1" class="texto"><strong>Dados</strong> — Interesse em análise de dados e na utilização de informações para criar soluções e tomar decisões.</li>
+                <li id="item1" class="texto"><strong>Criatividade e design</strong> — Também gosto de explorar a parte visual e criativa dos projetos,
+                     especialmente interfaces, identidade visual e criação de conteúdo.</li>
+                <li id="item1" class="texto"><strong>Vôlei</strong> — Além de praticar, já tive experiência na organização e 
+                    liderança de uma equipe feminina de vôlei. Atualmente, sou capitã do time da atlética Cimatlética SENAI CIMATEC ,
+                    além de participar como membro da diretoria de 2026.</li>
+            </ul>
+
+
+
+        </div>
+
+    </section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
 </body>
 
+<footer id="rodape">
+    <div id="contato">
+        <p>Email: milaurocha@gmail.com</p>
+        <p>Tel: (71) 9 9954-2005</p>
+    </div>
+</footer>
+
 </html>
+

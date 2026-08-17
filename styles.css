@@ -1,9 +1,16 @@
 
+/*CSS Global*/
 html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+/*-------------------------*/
 
 #fundo{
     width: 100%;
@@ -12,14 +19,14 @@ html, body {
 }
 
 .topo{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
 }
 
-#barra-navegacao nav{
+#barra-navegacao{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,11 +59,134 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 100px 0;
+    padding: 40px 0;
 }
 
 #foto_nome{
     display: flex;
-    gap: 20px;
-    
+    gap: 10px;
+    align-items: center;
+}
+
+#minha-foto{
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
+    border-color: rgb(226, 43, 226);
+    border-width: 2px;
+    border-style: outset;
+}
+
+.nome{
+    font-family: Poppins;
+    color: white;
+    font-weight: 500;
+}
+
+#camila{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    margin-bottom: 4px;
+    margin-left: 20px;
+}
+
+#camila-descricao{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin-top: 0;
+    margin-left: 20px;
+    font-weight: 300;
+}
+
+.links{
+    gap:18px;
+    display: flex;
+    justify-content: first baseline;
+    padding: 18px;
+}
+
+.redes-sociais{
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: auto;
+    width: 120px;
+    background-color: rgb(99, 21, 172);
+    font-size: medium;
+    border: none;
+    border-radius: 30px;
+    color: white;
+}
+
+.redes-sociais:hover{
+    background-color:  rgb(68, 14, 119);
+}
+
+#foto-cimatec{
+    width: 580px;
+    height: auto;
+}
+
+.sobre-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 400px 100px 400px;
+}
+
+.secao-titulo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    color:  rgb(68, 14, 119) ;
+    font-weight: 650;
+    margin-bottom: 20px;
+}
+
+.subtopico{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:  rgb(101, 46, 153) ;
+    font-size: 22px;
+}
+
+.texto, 
+.sub-texto{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: black;
+}
+
+/*CARROSSEL DE IMAGENS*/
+
+.imagem-carrossel {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+ #carouselExempleControls{
+        width: 60%;
+      }
+
+#carouselExample{
+    max-width: 560px;
+    height: auto;
+    margin: 40px 0 80px 0;
+}
+
+#rodape{
+    background: linear-gradient(rgba(87, 19, 150, 0.508), rgba(77, 32, 119, 0.842) , rgba(45, 8, 80, 0.936)) ;
+    color: rgb(28, 3, 37);
+    margin: 0;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 20px;
+}
+
+#contato{
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
