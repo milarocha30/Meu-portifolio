@@ -15,7 +15,7 @@ a{
 #fundo{
     width: 100%;
     height: 600px;
-    opacity: 0.85;
+   
 }
 
 .topo{
@@ -43,7 +43,7 @@ a{
 }
 
 #barra-navegacao a:hover{
-    color: rgb(141, 34, 241);
+    color: rgb(88, 9, 17);
 }
 
 #titulo{
@@ -72,7 +72,7 @@ a{
     border-radius: 100%;
     height: 200px;
     width: 200px;
-    border-color: rgb(226, 43, 226);
+    border-color: rgb(201, 34, 34);
     border-width: 2px;
     border-style: outset;
 }
@@ -110,7 +110,7 @@ a{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: auto;
     width: 120px;
-    background-color: rgb(99, 21, 172);
+    background-color: rgb(147, 23, 46);
     font-size: medium;
     border: none;
     border-radius: 30px;
@@ -118,7 +118,7 @@ a{
 }
 
 .redes-sociais:hover{
-    background-color:  rgb(68, 14, 119);
+    background-color:  rgb(88, 9, 17);
 }
 
 #foto-cimatec{
@@ -138,14 +138,14 @@ a{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-family: 'Poppins', sans-serif;
     font-size: 28px;
-    color:  rgb(68, 14, 119) ;
+    color:  rgb(11, 6, 72) ;
     font-weight: 650;
     margin-bottom: 20px;
 }
 
 .subtopico{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:  rgb(101, 46, 153) ;
+    color:  rgb(43, 44, 82) ;
     font-size: 22px;
 }
 
@@ -190,3 +190,4 @@ a{
     justify-content: center;
     align-items: center;
 }
+
