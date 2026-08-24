@@ -13,7 +13,7 @@
 
 <body>
     
-    <img id="fundo" src="\img\fundo-portifolio.png" alt="fundo de tela">
+    <img id="fundo" src="\img/Fundo-portifolio (2).png" alt="fundo de tela">
 
     <header class="topo">
         <nav id="barra-navegacao">
@@ -33,6 +33,9 @@
                     <div class="nome">
                         <h1 id="camila">Camila Rocha</h1>
                         <h3 id="camila-descricao">Estudante de Engenharia de Computação</h3>
+                        <p id="mini-descricao">Gosto de transformar ideias em projetos e explorar áreas como desenvolvimento de software, 
+                            Inteligência Artificial, dados e tecnologias imersivas.
+                            Estou sempre em busca de novos desafios e oportunidades para aprender, criar e evoluir.</p>
                         <div class="links">
                             <button class="redes-sociais">
                                 <a id="linkedin" href="https://www.linkedin.com/in/camilausrocha/">LinkedIn</a>
@@ -64,18 +67,60 @@
         <div class="sobre-container" id="formacao">
             <h2 class="secao-titulo">Formação & Experiências</h2>
             <p class="texto">
-                Estudante de <strong>Engenharia de Computação na Universidade SENAI CIMATEC</strong>, atualmente cursando o 6º semestre.
-            </p>
-            <!--SUBTOPICOS-->
-            <h3 class="subtopico">CIMATEC Jr.</h3>
-            <p class="sub-texto">Atuação na empresa jr da Universidade CIMATEC, 
-                com experiência em desenvolvimento profissional, organização e trabalho em equipe.</p>
+                Ao longo da minha formação em Engenharia de Computação, tenho buscado me envolver em diferentes iniciativas,
+                projetos e eventos que complementam minha formação acadêmica e ampliam minha experiência prática. 
+                Minha trajetória inclui participação em projetos de tecnologia, atividades de pesquisa, 
+                competições de programação, eventos acadêmicos e iniciativas de liderança e comunicação.</p>
 
-            <h3 class="subtopico">Clube de Programação</h3>
-            <p class="sub-texto">Atuação como Diretora da área de marketing e comunicação,
-                contribuindo para a criação de conteúdos, divulgação das atividades do clube e organização do setor.</p>
+            <!--SUBTOPICOS-->
+
+            <!--CIMATEC JR-->
+            <div class="iniciativa">
+                <div class="logo-coluna">
+                    <img src="/img/cimatecjr_logo.jpg" alt="Logo CIMATEC Jr." class="logo-iniciativa">
+                </div>
+
+                <div class="titulo-coluna">
+                    <h3 class="subtopico">CIMATEC Jr.</h3>
+                </div>
+
+                <div class="descricao-coluna">
+                    <p class="sub-texto">
+                        Atuação como Projetista no Núcleo de Projetos de Computação 
+                        da empresa júnior da Universidade SENAI CIMATEC. Também atuei com foco no 
+                        Departamento Comercial, participando do atendimento a clientes, organização
+                        de demandas e desenvolvimento de habilidades profissionais. Posteriormente,
+                        assumi a função de Coordenadora do Funil de Computação, acompanhando e 
+                        organizando o processo de prospecção e relacionamento com potenciais clientes.
+
+                    </p>
+                </div>
+            </div>
+           
+
+            <!--CLUBE DE PROGRAMAÇÃO-->
+            <div class="iniciativa">
+                <div class="logo-coluna">
+                    <img src="/img/logo-clube.png" alt="Logo Clube de Programação" class="logo-iniciativa">
+                </div>
+
+                <div class="titulo-coluna">
+                    <h3 class="subtopico">Clube de Programação</h3>
+                </div>
+
+                <div class="descricao-coluna">
+                    <p class="sub-texto">
+                        Atuação como <strong>Diretora de Marketing</strong> do Clube de Programação, 
+                        liderando iniciativas de comunicação,
+                         criação de conteúdos e divulgação das atividades do clube. 
+                        Experiência na organização do setor e no desenvolvimento de
+                         materiais para eventos e ações de incentivo à programação.
+                    </p>
+                </div>
+            </div>
 
             <!--CLUBE DE PROGRAMAÇÃO - CARROSSEL DE FOTOS-->
+        
             <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -97,12 +142,26 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+            
+            
+            <!--HIIVE LAB-->
+            <div class="iniciativa">
+                <div class="logo-coluna">
+                    <img src="/img/ID_HIIVE_FINAL-03.png" alt="Logo HIIVE Lab" class="logo-iniciativa">
+                </div>
 
+                <div class="titulo-coluna">
+                    <h3 class="subtopico">HIIVE Lab / INCITE Indústria 4.0</h3>
+                </div>
 
-            <h3 class="subtopico">HIIVE Lab / INCITE Indústria 4.0</h3>
-            <p class="sub-texto">Bolsista de Iniciação Científica no Laboratório de Realidade Virtual HIIVE Lab do SENAI CIMATEC com participação 
-                em projetos de pesquisa e divulgação científica envolvendo Realidade Virtual e Indústria 4.0 
-                e estudos de presença em ambientes imersivos.</p>
+                <div class="descricao-coluna">
+                    <p class="sub-texto">
+                        Atuação como <strong>Immersive Technologies Communications Fellow</strong> no HIIVE Lab do SENAI CIMATEC, contribuindo para a comunicação e divulgação científica de projetos relacionados a Realidade Virtual, Indústria 4.0 e tecnologias imersivas. Responsável pela produção de conteúdos e materiais de comunicação, apoiando a divulgação das pesquisas e iniciativas desenvolvidas pelo laboratório.
+
+                    </p>
+                </div>
+            </div>
+            
 
             <h3 class="subtopico">Eventos e competições</h3>
             <p class="sub-texto">Participação em eventos e iniciativas de tecnologia, incluindo SUCESU-BA 2025, SBGAMES, SVR e SIBGRAPI 2025 como voluntária, 
@@ -171,10 +230,40 @@
 </body>
 
 <footer id="rodape">
-    <div id="contato">
-        <p>Email: milaurocha@gmail.com</p>
-        <p>Tel: (71) 9 9954-2005</p>
+
+    <div class="footer-conteudo">
+
+        <div class="footer-sobre">
+            <h3>Camila Rocha</h3>
+            <p>
+                Explorando tecnologia, criando soluções e aprendendo continuamente.
+            </p>
+        </div>
+
+        <div class="footer-navegacao">
+            <h4>Navegação</h4>
+            <a href="#sobre-mim">Sobre</a>
+            <a href="#formacao">Formação & Experiências</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#hobbies">Hobbies & Interesses</a>
+        </div>
+
+        <div class="footer-contato">
+            <h4>Contato</h4>
+            <a href="mailto:milaurocha@gmail.com">
+                Email
+            </a>
+            <a href="https://www.linkedin.com/in/camilausrocha/">
+                LinkedIn
+            </a>
+        </div>
+
     </div>
+
+    <div class="footer-final">
+        <p>© 2026 Camila Rocha</p>
+    </div>
+
 </footer>
 
 </html>

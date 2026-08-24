@@ -12,10 +12,37 @@ a{
 }
 /*-------------------------*/
 
+/*ANIMAÇÕES*/
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes aparecer-topico {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
 #fundo{
     width: 100%;
-    height: 600px;
-    opacity: 0.85;
+    height: 100vh;
+    object-fit: fill;
 }
 
 .topo{
@@ -31,7 +58,7 @@ a{
     justify-content: center;
     align-items: center;
     gap: 30px;
-    padding: 40px;
+    padding: 30px;
 }
 
 #barra-navegacao a{
@@ -43,7 +70,7 @@ a{
 }
 
 #barra-navegacao a:hover{
-    color: rgb(141, 34, 241);
+    color: rgb(88, 9, 17);
 }
 
 #titulo{
@@ -57,24 +84,27 @@ a{
 #titulo-nome{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    padding: 40px 0;
+    min-height: calc(100vh - 90px);
+    padding-top: 20px;
 }
 
 #foto_nome{
     display: flex;
     gap: 10px;
     align-items: center;
+    animation: aparecer 1s ease-out;
 }
 
 #minha-foto{
     border-radius: 100%;
-    height: 200px;
-    width: 200px;
-    border-color: rgb(226, 43, 226);
+    height: 300px;
+    width: 300px;
+    border-color: rgb(201, 34, 34);
     border-width: 2px;
     border-style: outset;
+    
 }
 
 .nome{
@@ -85,24 +115,38 @@ a{
 
 #camila{
     font-family: 'Poppins', sans-serif;
-    font-size: 40px;
-    margin-bottom: 4px;
+    font-size: 64px;
     margin-left: 20px;
+    margin-top: 60px;
+    animation: aparecer 1s ease-out 0.2s both;
 }
 
 #camila-descricao{
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    margin-top: 0;
+    font-size: 24px;
     margin-left: 20px;
     font-weight: 300;
+    animation: aparecer 1s ease-out 0.4s both;
+}
+
+#mini-descricao{
+    width: 500px;
+    height: auto;
+    font-weight: 100;
+    font-size: 13px;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: rgba(240, 248, 255, 0.74);
+    animation: aparecer 1s ease-out 0.6s both;
 }
 
 .links{
     gap:18px;
     display: flex;
     justify-content: first baseline;
-    padding: 18px;
+    margin-left: 20px;
+    animation: aparecer 1s ease-out 0.8s both;
+
 }
 
 .redes-sociais{
@@ -110,7 +154,7 @@ a{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: auto;
     width: 120px;
-    background-color: rgb(99, 21, 172);
+    background-color: rgb(147, 23, 46);
     font-size: medium;
     border: none;
     border-radius: 30px;
@@ -118,12 +162,13 @@ a{
 }
 
 .redes-sociais:hover{
-    background-color:  rgb(68, 14, 119);
+    background-color:  rgb(88, 9, 17);
 }
 
 #foto-cimatec{
     width: 580px;
     height: auto;
+    align-self: center;
 }
 
 .sobre-container{
@@ -131,22 +176,81 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 0 400px 100px 400px;
+    padding: 0 350px 100px 350px;
+    animation: aparecer-topico linear both;
+    animation-timeline: view();
+    animation-range: entry 5% cover 25%;
 }
 
 .secao-titulo{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-family: 'Poppins', sans-serif;
     font-size: 28px;
-    color:  rgb(68, 14, 119) ;
+    color:  rgb(11, 6, 72) ;
     font-weight: 650;
     margin-bottom: 20px;
 }
 
+.iniciativa{
+    display: grid;
+    grid-template-columns: 100px 220px 1fr;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    padding: 25px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.iniciativa:last-child{
+    border-bottom: none;
+}
+
+.iniciativa:last-of-type{
+    margin-bottom: 50px;
+}
+
+.logo-coluna{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-iniciativa{
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.iniciativa:hover .logo-iniciativa {
+    transform: scale(1.08);
+}
+
+.titulo-coluna{
+    display: flex;
+    align-items: center;
+}
+
+.titulo-coluna .subtopico{
+    margin: 0;
+}
+
+.descricao-coluna{
+    display: flex;
+    align-items: center;
+}
+
+.descricao-coluna .sub-texto{
+    margin: 0;
+}
+
+
 .subtopico{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:  rgb(101, 46, 153) ;
+    color:  rgb(43, 44, 82) ;
     font-size: 22px;
+    display: flex;
+    flex-direction: column;
 }
 
 .texto, 
@@ -160,7 +264,7 @@ a{
 
 .imagem-carrossel {
     width: 100%;
-    height: 400px;
+    height: 300px;
     object-fit: cover;
 }
 
@@ -169,24 +273,71 @@ a{
       }
 
 #carouselExample{
-    max-width: 560px;
+    max-width: 450px;
     height: auto;
-    margin: 40px 0 80px 0;
+    margin: 40px auto 80px auto;
 }
 
-#rodape{
-    background: linear-gradient(rgba(87, 19, 150, 0.508), rgba(77, 32, 119, 0.842) , rgba(45, 8, 80, 0.936)) ;
-    color: rgb(28, 3, 37);
-    margin: 0;
-    box-sizing: border-box;
-    height: 100%;
-    padding: 20px;
+.divisor-iniciativa{
+    width: 100%;
+    height: 1px;
+    border: 0;
+    margin: 30px 0;
+    background-color: rgba(11, 6, 72, 0.25);
+    opacity: 1;
 }
 
-#contato{
-    gap: 0;
+/*FOOTER*/
+#rodape {
+    background: linear-gradient(
+        135deg,
+        rgb(11, 6, 72),
+        rgb(45, 8, 80),
+        rgb(88, 9, 17)
+    );
+
+    color: white;
+    padding: 50px 10% 20px;
+}
+
+.footer-sobre p{
+    color: rgba(255, 255, 255, 0.586);
+}
+
+.footer-conteudo {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-conteudo h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+}
+
+.footer-navegacao,
+.footer-contato {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
+
+.footer-conteudo h4 {
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.footer-contato a:hover, .footer-navegacao a:hover{
+    color:brown
+}
+
+.footer-final {
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
