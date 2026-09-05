@@ -33,13 +33,16 @@
        ========================= */
 
    #barra-navegacao {
-        gap: 8px 18px;
-        padding: 15px 10px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+    width: 100%;
+    gap: 8px 18px;
+    padding: 15px 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    transform: translateY(25px);
+}
+
     #barra-navegacao a {
-        font-size: 12px;
+        font-size: 11px;
     }
 
 
