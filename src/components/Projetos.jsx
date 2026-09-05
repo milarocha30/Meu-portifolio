@@ -36,7 +36,7 @@ function Projetos() {
             nome: "Landing Page — Clube do Livro",
             tecnologia: "HTML/CSS",
             github: "Repositório no GitHub",
-            githubUrl: "https://github.com/milarocha30/capacitNPCP-Camila",
+            githubUrl: "https://github.com/milarocha30/Clube-do-Livro",
             descricao: "Landing page desenvolvida com foco em experiência do usuário, design responsivo e comunicação visual, incentivando a leitura e a participação em comunidades literárias."
         },
         {
