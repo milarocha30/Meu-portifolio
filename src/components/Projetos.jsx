@@ -35,6 +35,8 @@ function Projetos() {
         {
             nome: "Landing Page — Clube do Livro",
             tecnologia: "HTML/CSS",
+            github: "Repositório no GitHub",
+            githubUrl: "https://github.com/milarocha30/capacitNPCP-Camila",
             descricao: "Landing page desenvolvida com foco em experiência do usuário, design responsivo e comunicação visual, incentivando a leitura e a participação em comunidades literárias."
         },
         {
@@ -67,6 +69,14 @@ function Projetos() {
                     <div className="card-projeto" key={projeto.nome}>
                         <h3>{projeto.nome}</h3>
                         <p>{projeto.descricao}</p>
+                        <p>
+                        {projeto.github && (
+                            <a  className="link-github" href={projeto.githubUrl} target="_blank" rel="noopener noreferrer">
+                                <i className="bi bi-github"></i>
+                                {projeto.github}
+                            </a>
+                        )}
+                        </p>
                         <span className="tecnologia-filtro">{projeto.tecnologia}</span>
                     </div>
                 ))}
