@@ -1,0 +1,266 @@
+/* =========================
+   RESPONSIVIDADE - CELULAR
+   ========================= */
+
+@media (max-width: 768px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* =========================
+       FUNDO
+       ========================= */
+
+    #fundo {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    #foto-cimatec {
+        width: 100%;
+        max-width: 580px;
+        height: auto;
+    }
+
+
+    /* =========================
+       MENU
+       ========================= */
+
+    #barra-navegacao {
+        width: 100%;
+        gap: 12px 18px;
+        padding: 15px 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #barra-navegacao a {
+        font-size: 11px;
+    }
+
+
+    /* =========================
+       PÁGINA INICIAL
+       ========================= */
+
+    #titulo-nome {
+        width: 100%;
+        max-width: 100%;
+        min-height: auto;
+        padding: 105px 15px 50px;
+    }
+
+    #foto_nome {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #minha-foto {
+        width: 180px;
+        height: 180px;
+    }
+
+    .nome {
+        width: 100%;
+        max-width: 100%;
+        align-items: center;
+    }
+
+    #camila {
+        width: 100%;
+        max-width: 100%;
+        font-size: 34px;
+        margin: 15px 0 0;
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+
+    #camila-descricao {
+        width: 100%;
+        max-width: 100%;
+        font-size: 16px;
+        margin: 8px 0 0;
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+
+    #mini_descricao {
+        width: 100%;
+        max-width: 350px;
+        margin: 18px auto 0;
+        font-size: 12px;
+        line-height: 1.5;
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+
+    .links {
+        width: 100%;
+        max-width: 100%;
+        justify-content: center;
+        margin-left: 0;
+        margin-top: 15px;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .redes-sociais {
+        width: 100px;
+        padding: 9px;
+        font-size: 13px;
+    }
+
+
+    /* =========================
+       SEÇÕES
+       ========================= */
+
+    .sobre-container {
+        width: 100%;
+        max-width: 100%;
+        padding: 35px 20px 70px;
+    }
+
+    .secao-titulo {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+
+    /* =========================
+       INICIATIVAS
+       ========================= */
+
+    .iniciativa {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+        padding: 25px 0;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .logo-iniciativa {
+        width: 70px;
+        height: 70px;
+    }
+
+    .titulo-coluna {
+        justify-content: center;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .descricao-coluna {
+        justify-content: center;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .subtopico {
+        font-size: 20px;
+    }
+
+    .sub-texto {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+
+    /* =========================
+       CARROSSEL
+       ========================= */
+
+    #carouselExample {
+        grid-column: auto;
+        width: 100%;
+        max-width: 450px;
+        height: 250px;
+        margin: 30px auto 50px;
+    }
+
+    .carousel-inner {
+        width: 100%;
+        height: 100%;
+    }
+
+    .imagem-carrossel {
+        display: block;
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+
+    /* =========================
+       FILTROS DOS PROJETOS
+       ========================= */
+
+    #react-projetos {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .filtros {
+        width: 100%;
+        max-width: 100%;
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .botao-filtro {
+        width: auto;
+        min-width: 90px;
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+
+    /* =========================
+       CARDS DOS PROJETOS
+       ========================= */
+
+    .lista-projetos {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .card-projeto {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+    }
+
+
+    /* =========================
+       FOOTER
+       ========================= */
+
+    #rodape {
+        width: 100%;
+        max-width: 100%;
+        padding: 40px 25px 20px;
+    }
+
+    .footer-conteudo {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-navegacao,
+    .footer-contato {
+        align-items: center;
+    }
+}
