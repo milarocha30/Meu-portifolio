@@ -32,13 +32,12 @@
        MENU
        ========================= */
 
-    #barra-navegacao {
-        gap: 12px 18px;
-        padding: 30px 10px 15px;
+   #barra-navegacao {
+        gap: 8px 18px;
+        padding: 15px 10px;
         flex-wrap: wrap;
         justify-content: center;
     }
-
     #barra-navegacao a {
         font-size: 12px;
     }
@@ -52,7 +51,7 @@
         width: 100%;
         max-width: 100%;
         min-height: auto;
-        padding: 55px 24px 50px;
+        padding: 65px 15px 50px;
     }
 
     #foto_nome {
@@ -64,8 +63,8 @@
     }
 
     #minha-foto {
-        width: 180px;
-        height: 180px;
+        width: 160px;
+        height: 160px;
     }
 
     .nome {
